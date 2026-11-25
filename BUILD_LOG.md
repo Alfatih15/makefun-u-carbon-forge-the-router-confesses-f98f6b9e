@@ -66,8 +66,10 @@ not yet bundled — as expected at this stage.
 ## Repo
 
 - GitHub: https://github.com/Alfatih15/makefun-u-carbon-forge-the-router-confesses-f98f6b9e
-- Commit: 4fc06f7 (HEAD; first push was 1d25b6e, this commit records the
-  kit check outcome in BUILD_LOG)
+- Submit HEAD (run `git rev-parse HEAD` in the repo). History:
+  1d25b6e (first push) → 4fc06f7 (kit check recorded) → f368c66
+  (this note). HEAD has moved past f368c66 by the commit carrying this
+  line; always submit HEAD, not a sha named here.
 - About: homepage https://make.fun/bounty/u-carbon-forge-the-router-confesses-f98f6b9e,
   topics ai-agents, bounties, makefun — verified live via gh repo view.
 - `.makefun/owner.json`: {"wallet":"Cfdgeggmd6ij5dLpqwmqAaGExTbi4JPZJYcRdi4iSjSW"}
