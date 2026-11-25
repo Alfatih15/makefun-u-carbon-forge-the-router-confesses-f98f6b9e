@@ -47,15 +47,28 @@ two file writes.
 
 ## Kit check
 
-Run from the unpacked kit directory (see command in the verification notes):
+Run from the unpacked kit directory:
+`node cli/makefun.mjs check --kit . --repo <entry dir> --worktree`
+Result: 4 passed, 1 failed, 14 skipped, 5 checked at submission.
 
-- (results recorded after the run; transcripts_present is expected to fail
-  pre-bundle — transcripts are bundled at submit time, not now.)
+- pass: competition_open, snapshot (5 files, 6,941 bytes, within caps),
+  license_osi (MIT), entrypoint (main.ts at root, node22 accepted).
+- skip: strategy_note (not asked for), committed_secret (no --dotenv).
+- FAIL: transcripts_present (no transcripts uploaded) — expected pre-bundle;
+  transcripts are bundled at submit time, not now. All other transcript
+  checks skipped for the same reason.
+- Checked at submission (site-side, not run locally): repo_public,
+  repo_owner, repo_created_after_open, commit_in_repo, duplicate_snapshot.
+
+No other check failed. Verdict: not ready only because transcripts are
+not yet bundled — as expected at this stage.
 
 ## Repo
 
 - GitHub: https://github.com/Alfatih15/makefun-u-carbon-forge-the-router-confesses-f98f6b9e
-- Commit: (recorded after push)
+- Commit: 1d25b6e
+- About: homepage https://make.fun/bounty/u-carbon-forge-the-router-confesses-f98f6b9e,
+  topics ai-agents, bounties, makefun — verified live via gh repo view.
 - `.makefun/owner.json`: {"wallet":"Cfdgeggmd6ij5dLpqwmqAaGExTbi4JPZJYcRdi4iSjSW"}
 
 ## Status
